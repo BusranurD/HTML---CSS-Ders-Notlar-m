@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            /*head komutu altında yorum satırı*/ 
+            text-indent: 30px;
+            text-align: center;
+            line-height: 40px;
+            /*metin özellikleri*/
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blue;
+            font-size: 14px;
+            font-weight: bolder;
+            font-variant:small-caps;
+            text-transform: lowercase;
+            font-style: oblique;
+            text-decoration: overline whitesmoke;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+        }
+        .metin{
+            color: teal;
+            font-size: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color:yellow;
+            background-image: url(resim/backround.jpg);
+            background-size: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>paragraf özellikleri</h1>
+    <!-- text-indent : ilk satırın girintisini belirler -->
+    <!-- text-align : paragrafın hizalamasını yapar -->
+    <!-- inherit: içinde buludugu nesnenin özelliklerini alır. örneğin <h1><p></p></h1> seklinde bir yapıda
+    p color özelliği inherit yapılırsa h1 için geçerli olan renk geçerli olur -->
+    <!-- letter-spacing : harfler arası mesafe ayarlar
+    word-spacing : kelimeler arası mesafeyi ayarlar -->
+    <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+    
+        Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 
+            1500'lerden beri      endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, 
+            aynı zamanda pek değişmeden         elektronik dizgiye de        sıçramıştır. 
+            1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının       yayınlanması ile ve yakın zamanda 
+            Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık
+            yazılımları ile popüler olmuştur.</p>
+    <p class="metin">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+    
+                Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 
+                    1500'lerden beri      endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, 
+                    aynı zamanda pek değişmeden         elektronik dizgiye de        sıçramıştır. 
+                    1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının       yayınlanması ile ve yakın zamanda 
+                    Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık
+                    yazılımları ile popüler olmuştur.</p>
+</body>
+</html>

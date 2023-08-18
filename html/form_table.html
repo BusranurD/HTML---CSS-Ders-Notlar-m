@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu:</h1>
+        <form action="kayit.aspx" method="GET" autocomplete="on">
+            <!--autocomplete : önceden doldurulan içeriklerle doldurulmasını saglar-->
+            <table>
+                <tr>
+                    <td>Ad Soyad:</td>
+                    <td><input type="text" value="busra" name="adsoyad"></td>
+                    <!--value : formun elemanı belirlenir-->
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" autofocus placeholder="email yaz"></td>
+                    <!--autofocus : imlecin bu metin kutusunu göstermesini saglar-->
+                    <!--placeholder : ipucu yazı göstermemizi sağlar-->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit"><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

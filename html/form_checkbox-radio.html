@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--checkboxların name özellikleri farklı olmak zorundadır-->
+        <h1>Onay Kutusu</h1>
+        <form name="onay">
+            <input type="checkbox" name="bulten">Bültene abone ol
+            <br>
+            <input type="checkbox" name="medeni">Evliyim
+            <br>
+            <br>
+            <input type="submit" value="Abone Ol">
+        </form>
+        <h1>Seçenek Kutusu</h1>
+        <form name="secenek">
+            <h2>Sevdiğiniz spor :</h2>
+            <input type="radio" name="spor" value="Futbol" checked>Futbol
+            <!--checkhed : yazdıgımız seçeneğin seçili olmasını saglarız-->
+            <input type="radio" name="spor" value="Voleybol">Voleybol
+            <input type="radio" name="spor" value="Basketbol">Basketbol
+            <br>
+            <input type="submit">
+        </form>
+    <!--radioda name özellikleri aynı olmalı value farklı olmalıdır 
+    amacımız sunulan seçeneklerden birisini cevap olarak almaktır-->
+    </body>
+</html>

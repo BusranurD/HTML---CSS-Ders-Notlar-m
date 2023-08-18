@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text], input[type=email]{
+                color: crimson;
+                background-color: darkgray;
+                font-weight: bolder;
+            }/*input type özelliği text ve email olan için geçerli kurallar*/
+            .formeleman{
+                color: brown;
+                background-color: burlywood;
+                font-size: 15px;
+                border-width: 5px;
+                border-color: darkred;
+                border-style:double;
+                margin: 5px;
+                padding: 5px;
+            }
+            .buton{
+                font-size: 20px;
+                margin: 15px;
+                border-width: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--form olusturmak için form tagı kullanılır-->
+        <!--name: forma isim vermek için kullanılır-->
+        <!--action: verilerin hangi sayfaya gönderilecegını belirler-->
+        <!--method: verilerin sayfaya hangi yöntemle gönderileceğini belirlemek için kullanılır-->
+        <h4>Üye Kayıt Formu:</h4>
+        <form name="kayıt" action="kayıt.php" method="GET">
+            Ad Soyad: <input type="text" name="isim"
+            size="20" maxlength="30" required>
+        <!--size : metin kutusu genişliği 
+        metin kutusuna girilecek maksimum uzunluk : maxlenght-->
+        <!--required : girisi zorunlu hale getirir-->
+            <br>
+            E-mail: <input type="email" name="email" required>
+            <br>
+            Web Sitesi: <input type="url" name="adres">
+            <br>
+            Yaşınız: <input type="number" name="yas" required>
+            <br>
+            Öneri: <textarea name="öneri" class="formeleman" rows="5" cols="20"></textarea>
+            <br>
+            <input type="submit" class="buton">
+            <!--value : onay butonu yazısını değiştirmek için-->
+            <input type="reset" value="Temizle" class="buton">
+            <!--reset : formdaki verileri silmek için-->
+        </form>    
+        <img src="resim/özellik.png">
+    </body>
+</html>

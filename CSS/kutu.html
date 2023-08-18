@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                border-color: turquoise;
+                border-style: solid;
+            }
+            #buyuk{
+                border-width: 5px;
+                width: 200px;
+                height: 100px;
+                background-color: whitesmoke;
+                position: fixed;
+                right: 0px;
+                bottom: 50px;
+                z-index: 1;
+                border-radius: 10px;
+                overflow: scroll;
+            }
+            #kucuk{
+                width: 100px;
+                height: 50px;
+                background-color: teal;
+                position: relative;
+                left: 10px;
+                bottom: 140px;
+                z-index: 2;
+                border-radius: 10px 30px;
+            } 
+        </style>
+    </head>
+    <body>
+        <!--position default u relative dir
+        relative: bulundugu konumdan hareket eder(default)
+        fixed: sayfaya göre hareket eder
+        absolute: iç içe kutular için kullanılır <div><div></div></div> seklinde
+        -->
+        <!-- z-indeks degeri buyuk olan kutu önde görünür -->
+        <!-- eger kutuların kenarını yuvarlamk isiyorsak boder-radius kullanılır -->
+        baslangıc   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>son
+        <div id="buyuk">
+            <p>fsdf <br>
+            fsdfas <br>
+            fsdfds <br>
+            fsdfdsf <br>
+            fdsfas <br>
+            fdsfa <br></p>
+            <!-- overflow-hidden : tasan içerik görünmez
+            overflow-visible : taşan icerik görünür(default)
+            overflow-scroll : kaydırma cubugu eklenir
+            overflow-auto : icerik tasarsa kaydırma cubugu konulur tasmıyorsa konulmaz-->
+        </div>
+        <div id="kucuk">
+
+        </div>
+
+    </body>
+</html>
